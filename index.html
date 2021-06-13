@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="style.css">
 
@@ -16,15 +17,12 @@
 <body>
   <!-- Nav bar -->
 
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
 
     <div class="container">
-      <a href="#" class="navbar-brand">Anubhav's frontend webpage</a>
-      <button class="navbar-toggler" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navmenu">
-      <span class="navbar-toggler-icon"></span>
+      <a href="#" class="navbar-brand">Anubhav Patnaik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
       </button>
 
 
@@ -45,7 +43,108 @@
   </nav>
 
 
-<!-- Showcase -->
+  <!-- Showcase -->
+
+
+  <section class="bg-dark text-light p-5 p-lg-0 text-sm-center">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1>Become a <span class="text-secondary">web developer</span> </h1>
+          <p class="lead my-4">
+            Hi I am Anubhav Patnaik, an aspiring machine learning engineer and a web developer enthusiast. This is my
+            first webpage and I have created this webpage using html and bootstrap.
+          </p>
+          <a href="https://www.youtube.com/watch?v=4sosXZsdy-s&ab_channel=TraversyMedia">
+            <button class="btn btn-primary btn-sm">Resouce</button>
+          </a>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_programming_2svr.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Send mail -->
+
+
+  <section class="bg-primary text-light p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h4 class="mb-3 mb-md-0 ">
+          Sign up for project collaborations on ongoing projects
+        </h4>
+        <div class="input-group mail-input">
+          <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-dark btn-lg" type="button">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Boxes -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row text-center">
+        <h2 class="text-center text-secondary">PROJECTS</h2>
+
+        <div class="col-md">
+          <div class="card bg-dark text-light w-100 h-100">
+            <div class="card-body text=center">
+              <div class="h1 mb-3">
+                <i class="bi bi-github"></i>
+              </div>
+              <h5 class="card-title">MOVIE RATING PREDICTION</h5>
+              <h6 class="card-subtitle mb-2 text-bold text-muted">• Training a Multinomial Naive Bayes Model to classify
+                movie
+                reviews as good and bad</h6>
+              <p class="card-text"> Using the bag of words model to make a NLP Pipeline. Implementing stopwords removal
+                and stemming to clean the data. Using Laplace smoothing to solve the problem of zero probability and
+                further enhance the model. Technologies : Natural Language Processing Toolkit,scikit-learn
+                content.</p>
+              <a href="https://github.com/codebotx/Movie-rating-prediction" class="btn btn-dark">Resources</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-dark text-light w-100 h-100">
+            <div class="card-body tex=center">
+              <div class="h1 mb-3">
+                <i class="bi bi-github"></i>
+              </div>
+              <h5 class="card-title">CLASSIFYING MNIST DIGIT DATASET</h5>
+              <h6 class="card-subtitle mb-2 text-bold text-muted">• Trained a Convolutional Neural Network using keras
+                to classify the handwritten digits(0-9)</h6>
+              <p class="card-text"> Used Max Pooling to further enhance the perception of every ﬁlter. Made use of the
+                dropout technique to reduce overﬁtting and to increase the accuracy
+                Technologies:Keras, Google Colab</p>
+              <a href="https://github.com/codebotx/Classifying-mnist-digit-dataset"
+                class="btn btn-dark mt-5 ">Resources</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-dark text-light w-100 h-100">
+            <div class="card-body text=center">
+              <div class="h1 mb-3">
+                <i class="bi bi-github"></i>
+              </div>
+              <h5 class="card-title">WEB XR</h5>
+              <h6 class="card-subtitle mb-2 text-muted">• Building a 3d webpage with AR and VR capabilities</h6>
+              <p class="card-text">WebXR is a group of standards which are used together to support rendering 3D scenes to hardware designed for presenting virtual worlds. Three.js is a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser. </p>
+              <a href="https://github.com/codebotx/webxr" class=" btn btn-dark mt-3 ">Resources</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
