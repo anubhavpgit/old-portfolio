@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <title>Anubhav's first bootstrap webpage</title>
+  <title>Anubhav's portfolio</title>
 </head>
 
 <body>
@@ -53,13 +53,13 @@
     <div class="container">
       <div class="d-sm-flex align-items-center justify-content-between">
         <div>
-          <h1>Become a <span class="text-secondary">web developer</span> </h1>
+          <h1>Become a <span class="text-secondary">Web Developer</span> </h1>
           <p class="lead my-4">
             Hi I am Anubhav Patnaik, an aspiring machine learning engineer and a web developer enthusiast. This is my
             first webpage and I have created this webpage using html and bootstrap.
           </p>
           <a href="https://www.youtube.com/watch?v=4sosXZsdy-s&ab_channel=TraversyMedia">
-            <button class="btn btn-primary btn-sm">Resouce</button>
+            <button class="btn btn-primary btn-sm">Resource</button>
           </a>
         </div>
         <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_programming_2svr.svg" alt="">
@@ -78,9 +78,10 @@
           Sign up for project collaborations on ongoing projects
         </h4>
         <div class="input-group mail-input">
-          <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username"
+          <input type="text" class="form-control" placeholder="Enter topic" aria-label="Recipient's username"
             aria-describedby="button-addon2">
-          <button class="btn btn-dark btn-lg" type="button">
+          <button class="btn btn-dark btn-lg" data-bs-toggle="modal"
+              data-bs-target="#mailto" type="button">
             Send
           </button>
         </div>
@@ -93,7 +94,7 @@
   <section class="p-5">
     <div class="container">
       <div class="row text-center g-4">
-        <h2 class="text-center text-secondary">PROJECTS</h2>
+        <h2 class="text-center text-secondary ">PROJECTS</h2>
 
         <div class="col-md">
           <div class="card bg-dark text-light w-100 h-100">
@@ -158,7 +159,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-md">
-          <img src="/img/undraw_feeling_proud_qne1.svg" class="img-fluid" alt="">
+          <img class="img-fluid " src="img/undraw_feeling_proud_qne1.svg" alt="">
         </div>
         <div class="col-md p-5">
           <h2 class="text-center">
@@ -184,23 +185,94 @@
   <section id="learnaboutme" class="p-5 bg-dark text-light">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-       
+
         <div class="col-md p-5">
           <h2 class="text-center">
-           Interests and hobbies
+            Interests and hobbies
           </h2>
           <p class="lead">
-           My hobbies are music and photography. I also have interests in cyber security, IOT and theoretical physics. I have attended various workshops on life in space and have a profound interest in astrophysics and space. I like to do graphic designing, video editing, poster making and illustrations. My hobbies also include debates, MUNs and I have won all the MUNs hosted in college yet. I am a big-time foodie and I love to cook and travel a lot.
-         </p>
+            My hobbies are music and photography. I also have interests in cyber security, IOT and theoretical physics.
+            I have attended various workshops on life in space and have a profound interest in astrophysics and space. I
+            like to do graphic designing, video editing, poster making and illustrations. My hobbies also include
+            debates, MUNs and I have won all the MUNs hosted in college yet. I am a big-time foodie and I love to cook
+            and travel a lot.
+          </p>
         </div>
-         <div class="col-md">
-          <img src="/img/undraw_on_the_office_fbfs.svg" class="img-fluid" alt="">
+        <div class="col-md">
+          <img class="img-fluid " src="img/undraw_on_the_office_fbfs.svg" alt="">
         </div>
       </div>
     </div>
 
-     </section>
+  </section>
 
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2021 Anubhab Patnaik</p>
+
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div
+      class="modal fade"
+      id="mailto"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and I will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
