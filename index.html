@@ -7,11 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="style.css">
 
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' /> -->
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <script src="index.js"></script>
 
 
   <title>Anubhav's portfolio</title>
@@ -302,18 +307,13 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script> -->
 
-  <!-- <div id='map'></div> -->
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYW51YmhhYnI1MCIsImEiOiJja3B5NzJ0bzcwZDA1MnRxY2c1MnFoZXhzIn0.B8PLHdYBRzVvxRJOFE-Dbw';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [20.348675, 85.827322],
-      zoom: 18
+  <div id="map"></div>
 
-    });
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQQeMhxVvZuSAm763qRllocoC-nRIRsi8&callback=initMap&libraries=&v=weekly"
+    async></script
   </script>
 
 
