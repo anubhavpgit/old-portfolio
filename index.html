@@ -12,11 +12,10 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' /> -->
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css' rel='stylesheet' />
 
-  <script src="index.js"></script>
 
 
   <title>Anubhav's portfolio</title>
@@ -186,9 +185,6 @@
             coding, and I am a ranked coder in HackerRank. I have proficient knowledge in C, C++, and Python. I have
             recently started web development usingHTML and bootstrap.
           </p>
-          <a href="proff.html" class="btn mt-3">
-            <i class="bi bi-window"></i> Read More
-          </a>
         </div>
       </div>
     </div>
@@ -209,9 +205,6 @@
             debates, MUNs and I have won all the MUNs hosted in college yet. I am a big-time foodie and I love to cook
             and travel a lot.
           </p>
-          <a href="pers.html" class="btn btn-dark mt-3">
-            <i class="bi bi-window"></i> Read More
-          </a>
         </div>
         <div class="col-md">
           <img class="img-fluid " src="img/undraw_on_the_office_fbfs.svg" alt="">
@@ -231,7 +224,7 @@
           <h2 class="text-center mb-4 ">Contact Info</h2>
           <ul class="list-group list-group-flush lead">
             <li class="list-group-item bg-dark text-white">
-              <span class="fw-bold ">Main Location:</span> Patia, Bhubaneswar
+              <span class="fw-bold ">Location:</span> Patia, Bhubaneswar
             </li>
             <li class="list-group-item bg-dark text-white">
               <span class="fw-bold">Phone no:</span> 9430332116
@@ -309,11 +302,14 @@
 
   <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script> -->
 
-  <div id="map"></div>
-
-  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQQeMhxVvZuSAm763qRllocoC-nRIRsi8&callback=initMap&libraries=&v=weekly"
-    async></script
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW51YmhhYnI1MCIsImEiOiJja3B5NzJ0bzcwZDA1MnRxY2c1MnFoZXhzIn0.B8PLHdYBRzVvxRJOFE-Dbw';
+    var map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [85.8, 20.3], // starting position [lng, lat]
+      zoom: 9 // starting zoom
+    });
   </script>
 
 
