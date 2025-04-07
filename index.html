@@ -5,327 +5,381 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-
-
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Mapbox -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css' rel='stylesheet' />
 
-
-
-  <title>Anubhav's portfolio</title>
+  <title>Anubhab Patnaik | Software Developer & ML Enthusiast</title>
 </head>
 
 <body>
-  <!-- Nav bar -->
-
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top" id="main-nav">
     <div class="container">
-      <a href="#" class="navbar-brand">ANUBHAV PATNAIK</a>
+      <a href="#" class="navbar-brand fw-bold">Anubhab PATNAIK</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#proj" class="nav-link"> Projects</a>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link"> Contact</a>
+            <a href="#about" class="nav-link">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="#learnaboutme" class="nav-link"> About Me</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-
-  <!-- Showcase -->
-
-  <div id="particles-js"></div>
-  <section class="bg-dark text-light p-5  text-sm-center">
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center text-light">
+    <div id="particles-js"></div>
     <div class="container">
-
       <div class="d-sm-flex align-items-center justify-content-between">
         <div class="img-home">
-          <h1>Become a <span class="text-secondary">Software Developer</span> </h1>
+          <h1>Software Developer</h1>
           <p class="lead my-4">
-            Hi I am Anubhav Patnaik, an aspiring software developer and a machine learning enthusiast. This is my
-            first webpage and I have created this webpage using html and bootstrap.
+            I'm Anubhab Patnaik, a Computer Science Engineering student passionate about software development and
+            artificial intelligence. Let's build something amazing together.
           </p>
-          <a href="https://docs.google.com/document/d/16DjN6ZBN3IEGQRbwRNgpyZUu2C9mkRva1CB6abof_XM/edit?usp=sharing">
-            <button class="btn btn-primary btn-sm">Resume</button>
-          </a>
+          <div class="d-flex gap-3">
+            <a href="https://docs.google.com/document/d/16DjN6ZBN3IEGQRbwRNgpyZUu2C9mkRva1CB6abof_XM/edit?usp=sharing"
+              class="btn btn-primary px-4 py-2">
+              <i class="bi bi-file-earmark-text me-2"></i>Resume
+            </a>
+            <a href="#projects" class="btn btn-outline-light px-4 py-2">
+              <i class="bi bi-code-slash me-2"></i>View My Work
+            </a>
+          </div>
         </div>
-        <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_programming_2svr.svg" alt="">
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/undraw_programming_2svr.svg"
+          alt="Programming illustration">
       </div>
     </div>
   </section>
 
-
-  <!-- Send mail -->
-
-
-  <section class="bg-primary text-light p-5">
+  <!-- Collaboration Section -->
+  <section class="bg-primary p-5 text-light">
     <div class="container">
-
       <div class="d-md-flex justify-content-between align-items-center">
-        <h4 class="mb-3 mb-md-0 ">
-          Sign up for project collaborations on ongoing projects
-        </h4>
-        <div class="input-group mail-input">
-          <input type="text" class="form-control" placeholder="Enter topic" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-          <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#mailto" type="button">
-            Send
+        <div>
+          <h4 class="mb-3 mb-md-0">
+            Interested in Collaboration?
+          </h4>
+          <p class="mb-3 mb-md-0">Let's work together on exciting projects!</p>
+        </div>
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Project idea or topic" aria-label="Project idea">
+          <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#mailto" type="button">
+            <i class="bi bi-send-fill me-2"></i>Connect
           </button>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- Boxes -->
-  <section class="p-5">
+  <!-- Projects Section -->
+  <section id="projects" class="p-5">
     <div class="container">
-      <div class="row text-center g-4" id="proj">
-        <h2 class="text-center text-secondary ">PROJECTS</h2>
-
-        <div class="col-md">
-          <div class="card bg-dark text-light w-100 h-100">
-            <div class="card-body text=center">
-              <div class="h1 mb-3">
-                <i class="bi bi-github"></i>
-              </div>
-              <h5 class="card-title">MOVIE RATING PREDICTION</h5>
-              <h6 class="card-subtitle mb-2 text-bold text-muted">• Training a Multinomial Naive Bayes Model to classify
-                movie
-                reviews as good and bad</h6>
-              <p class="card-text"> Using the bag of words model to make a NLP Pipeline. Implementing stopwords removal
-                and stemming to clean the data. Using Laplace smoothing to solve the problem of zero probability and
-                further enhance the model. Technologies : Natural Language Processing Toolkit,scikit-learn
-                content.</p>
-              <a href="https://github.com/codebotx/Movie-rating-prediction" class="btn btn-dark">Resources</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md">
-          <div class="card bg-light text-dark w-100 h-100">
-            <div class="card-body tex=center">
-              <div class="h1 mb-3">
-                <i class="bi bi-github"></i>
-              </div>
-              <h5 class="card-title">CLASSIFYING MNIST DIGIT DATASET</h5>
-              <h6 class="card-subtitle mb-2 text-bold text-muted">• Trained a Convolutional Neural Network using keras
-                to classify the handwritten digits(0-9)</h6>
-              <p class="card-text"> Used Max Pooling to further enhance the perception of every ﬁlter. Made use of the
-                dropout technique to reduce overﬁtting and to increase the accuracy
-                Technologies:Keras, Google Colab</p>
-              <a href="https://github.com/codebotx/Classifying-mnist-digit-dataset"
-                class="btn btn-dark mt-5 ">Resources</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md">
-          <div class="card bg-dark text-light w-100 h-100">
-            <div class="card-body text=center">
-              <div class="h1 mb-3">
-                <i class="bi bi-github"></i>
-              </div>
-              <h5 class="card-title">.NET</h5>
-              <h6 class="card-subtitle mb-2 text-muted">• Building a web application using .net core</h6>
-              <p class="card-text">The .NET Framework is a software framework developed by Microsoft that runs primarily
-                on Microsoft Windows. It includes a large class library called Framework Class Library and provides 
-                language interoperability across several programming languages.</p>
-              <a href="https://github.com/codebotx/webxr" class=" btn btn-dark mt-3 ">Resources</a>
-            </div>
-          </div>
-        </div>
+      <div class="text-center mb-5">
+        <h2 class="section-title">Featured <span class="text-primary">Projects</span></h2>
+        <p class="lead">Showcasing my technical skills and problem-solving abilities</p>
       </div>
-    </div>
-  </section>
 
-
-  <!-- Learn Sections -->
-  <section id="learnaboutme" class="p-5">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md">
-          <img class="img-fluid " src="img/undraw_feeling_proud_qne1.svg" alt="">
-        </div>
-        <div class="col-md p-5">
-          <h2 class="text-center">
-            Profesional Introduction
-          </h2>
-          <p class="lead text-center text-sm-start">
-            Hi, I am Anubhab Patnaik. I am from Bhubaneswar, Odisha. I am currently pursuing my B.Tech studying computer
-            science and engineering in Silicon Institute of Technology, Bhubaneswar. I did my 10th from DAV, Bistupur
-            and secured 9.2 CGPA. I did my 12th from FIITJEE, Hyderabad and secured 84%.
-          </p>
-          <p class="lead text-center text-sm-start"> I am currently studying computer science and engineering focusing on AI/ML and I am pursuing my career towards software development and machine learning. I have done a few small
-            projects in this field and will be working under an assistant professor in our college to do an extensive
-            research cum project and will be writing about it soon. Apart from that I am interested in competitive
-            coding, and I am a ranked coder in HackerRank. I have proficient knowledge in C, C++, and Python. I have
-            recently started web development using HTML and bootstrap.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="learnaboutme" class="p-5 bg-dark text-light">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-
-        <div class="col-md p-5">
-          <h2 class="text-center">
-            Interests and hobbies
-          </h2>
-          <p class="lead text-center text-sm-start">
-            My hobbies are music and photography. I also have interests in cyber security, IOT and theoretical physics.
-            I have attended various workshops on life in space and have a profound interest in astrophysics and space. I
-            like to do graphic designing, video editing, poster making and illustrations. My hobbies also include
-            debates, MUNs and I have won all the MUNs hosted in college yet. I am a big-time foodie and I love to cook
-            and travel a lot.
-          </p>
-        </div>
-        <div class="col-md">
-          <img class="img-fluid " src="img/undraw_on_the_office_fbfs.svg" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-
-  <!-- Contact & Map -->
-  <section class="p-5 bg-dark text-white">
-    <div class="container" id="contact">
       <div class="row g-4">
-        <div class="col-md ">
-          <h2 class="text-center mb-4 ">Contact Info</h2>
-          <ul class="list-group list-group-flush lead">
-            <li class="list-group-item bg-dark text-white">
-              <span class="fw-bold ">Location:</span> Patia, Bhubaneswar
-            </li>
-            <li class="list-group-item bg-dark text-white">
-              <span class="fw-bold">Phone no:</span> 9430332116
-            </li>
-            <li class="list-group-item bg-dark text-white">
-              <span class="fw-bold">Email ID:</span> anubhabr50@gmail.com
-            </li>
-          </ul>
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-box bg-primary-soft text-primary me-3">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <h5 class="card-title mb-0">Movie Rating Prediction</h5>
+              </div>
+              <p class="card-text text-muted mb-2 small">NLP • Machine Learning • Classification</p>
+              <p class="card-text">
+                Developed a Multinomial Naive Bayes model to classify movie reviews as positive or negative using
+                natural language processing.
+                Implemented a preprocessing pipeline with stopwords removal and stemming for improved accuracy. Applied
+                Laplace smoothing
+                to handle zero probability issues.
+              </p>
+              <div class="mt-auto">
+                <div class="tech-stack mb-3">
+                  <span class="badge bg-secondary me-1">NLTK</span>
+                  <span class="badge bg-secondary me-1">scikit-learn</span>
+                  <span class="badge bg-secondary me-1">Python</span>
+                </div>
+                <a href="https://github.com/codebotx/Movie-rating-prediction" class="btn btn-outline-primary">
+                  <i class="bi bi-github me-2"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md">
-          <div id="map"></div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-box bg-primary-soft text-primary me-3">
+                  <i class="bi bi-image"></i>
+                </div>
+                <h5 class="card-title mb-0">MNIST Digit Classification</h5>
+              </div>
+              <p class="card-text text-muted mb-2 small">Deep Learning • Computer Vision • CNN</p>
+              <p class="card-text">
+                Built and trained a Convolutional Neural Network using Keras to classify handwritten digits with high
+                accuracy.
+                Implemented max pooling for enhanced feature detection and utilized dropout techniques to prevent
+                overfitting
+                and improve model performance.
+              </p>
+              <div class="mt-auto">
+                <div class="tech-stack mb-3">
+                  <span class="badge bg-secondary me-1">Keras</span>
+                  <span class="badge bg-secondary me-1">TensorFlow</span>
+                  <span class="badge bg-secondary me-1">Google Colab</span>
+                </div>
+                <a href="https://github.com/codebotx/Classifying-mnist-digit-dataset" class="btn btn-outline-primary">
+                  <i class="bi bi-github me-2"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-box bg-primary-soft text-primary me-3">
+                  <i class="bi bi-window"></i>
+                </div>
+                <h5 class="card-title mb-0">.NET Web Application</h5>
+              </div>
+              <p class="card-text text-muted mb-2 small">Web Development • .NET Core • C#</p>
+              <p class="card-text">
+                Developed a web application using .NET Core framework, leveraging the extensive Framework Class Library.
+                This project demonstrates language interoperability across multiple programming languages
+                and implements modern web development practices.
+              </p>
+              <div class="mt-auto">
+                <div class="tech-stack mb-3">
+                  <span class="badge bg-secondary me-1">.NET Core</span>
+                  <span class="badge bg-secondary me-1">C#</span>
+                  <span class="badge bg-secondary me-1">HTML/CSS</span>
+                </div>
+                <a href="https://github.com/codebotx/webxr" class="btn btn-outline-primary">
+                  <i class="bi bi-github me-2"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="p-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">About <span class="text-primary">Me</span></h2>
+        <p class="lead">Get to know me beyond the code</p>
+      </div>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img class="img-fluid rounded" src="img/undraw_feeling_proud_qne1.svg" alt="Proud developer illustration">
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-4">Professional Background</h3>
+          <p class="mb-3">
+            I'm a Computer Science and Engineering student at Silicon Institute of Technology, Bhubaneswar, focused on
+            Artificial Intelligence and Machine Learning. My academic journey includes graduating from DAV, Bistupur
+            with a 9.2 CGPA and completing my 12th grade at FIITJEE, Hyderabad with 84%.
+          </p>
+          <p class="mb-4">
+            Currently, I'm concentrating on software development and machine learning, having completed several
+            projects in these domains. I'm also collaborating with an assistant professor on an extensive research
+            project that I look forward to documenting soon.
+          </p>
+          <div class="d-flex flex-wrap">
+            <div class="skill-badge me-2 mb-2">C/C++</div>
+            <div class="skill-badge me-2 mb-2">Python</div>
+            <div class="skill-badge me-2 mb-2">Machine Learning</div>
+            <div class="skill-badge me-2 mb-2">Web Development</div>
+            <div class="skill-badge me-2 mb-2">Competitive Coding</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+          <img class="img-fluid rounded" src="img/undraw_on_the_office_fbfs.svg" alt="Office illustration">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3 class="mb-4">Interests & Hobbies</h3>
+          <p class="mb-3">
+            Beyond technology, I'm passionate about music and photography. I'm also fascinated by cybersecurity,
+            IoT, and theoretical physics. I've attended various workshops on space exploration and have a deep
+            interest in astrophysics.
+          </p>
+          <p class="mb-4">
+            My creative pursuits include graphic design, video editing, poster creation, and illustration. I'm also an
+            accomplished debater, having won multiple Model United Nations (MUN) competitions at my college. In my
+            free time, I enjoy cooking and traveling to experience different cultures and cuisines.
+          </p>
+          <div class="d-flex flex-wrap">
+            <div class="interest-badge me-2 mb-2"><i class="bi bi-music-note-beamed me-1"></i>Music</div>
+            <div class="interest-badge me-2 mb-2"><i class="bi bi-camera me-1"></i>Photography</div>
+            <div class="interest-badge me-2 mb-2"><i class="bi bi-stars me-1"></i>Astrophysics</div>
+            <div class="interest-badge me-2 mb-2"><i class="bi bi-shield-lock me-1"></i>Cybersecurity</div>
+            <div class="interest-badge me-2 mb-2"><i class="bi bi-chat-quote me-1"></i>Debating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Get In <span class="text-primary">Touch</span></h2>
+        <p class="lead">I'd love to hear from you!</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Contact Information</h3>
+              <ul class="list-unstyled contact-list">
+                <li class="mb-3">
+                  <div class="d-flex align-items-center">
+                    <div class="contact-icon me-3">
+                      <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Location</h6>
+                      <p class="text-muted mb-0">Patia, Bhubaneswar, Odisha, India</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-3">
+                  <div class="d-flex align-items-center">
+                    <div class="contact-icon me-3">
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Phone</h6>
+                      <p class="text-muted mb-0">+91 9430332116</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-3">
+                  <div class="d-flex align-items-center">
+                    <div class="contact-icon me-3">
+                      <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Email</h6>
+                      <p class="text-muted mb-0">anubhabr50@gmail.com</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="social-links mt-4">
+                <a href="http://github.com/codebotx" class="social-link" aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anubhabpatnaik0530/" class="social-link" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="http://instagram.com/Anubhabclicks" class="social-link" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:anubhabr50@gmail.com" class="social-link" aria-label="Email">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-0">
+              <div id="map" class="h-100"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="p-5 bg-dark text-white text-center position-relative">
+  <footer class="py-4 text-center">
     <div class="container">
-
-
-      <a href="#" class="position-absolute bottom-0 end-0 p-5">
-        <i class="bi bi-arrow-up-circle h1"></i>
-      </a>
-      <a href="http://github.com/codebotx" class="  p-2 text-decoration-none text-white ">
-        <i class="bi bi-github"></i>
-      </a>
-
-      <a href="http://instagram.com/anubhavclicks" class="p-2 text-decoration-none text-white">
-        <i class="bi bi-instagram"></i>
-      </a>
-
-      <a href="mailto:anubhabr50@gmail.com" class="p-2 text-decoration-none text-white">
-        <i class="bi bi-envelope-open-fill"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/in/anubhabpatnaik0530/" class="p-2 text-decoration-none text-white">
-        <i class="bi bi-linkedin"></i>
-      </a>
-
-      <p class="lead p-2 mb-0 ">Copyright &copy; 2021 Anubhab Patnaik</p>
-
+      <p class="mb-0">&copy; 2025 Anubhab Patnaik. All rights reserved.</p>
     </div>
+    <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
   </footer>
 
-
-  <!-- Modal -->
-  <div class="modal fade" id="mailto" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="lead">Fill out this form and I will get back to you</p>
-          <form>
-            <div class="mb-3">
-              <label for="first-name" class="col-form-label">
-                First Name:
-              </label>
-              <input type="text" class="form-control" id="first-name" />
-            </div>
-            <div class="mb-3">
-              <label for="last-name" class="col-form-label">Last Name:</label>
-              <input type="text" class="form-control" id="last-name" />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="col-form-label">Email:</label>
-              <input type="email" class="form-control" id="email" />
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="col-form-label">Phone:</label>
-              <input type="tel" class="form-control" id="phone" />
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/particle.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
-  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script> -->
-
   <script>
+    // Initialize mapbox
     mapboxgl.accessToken = 'pk.eyJ1IjoiYW51YmhhYnI1MCIsImEiOiJja3B5NzJ0bzcwZDA1MnRxY2c1MnFoZXhzIn0.B8PLHdYBRzVvxRJOFE-Dbw';
     var map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: 'mapbox://styles/mapbox/streets-v11', // style URL
-      center: [85.8, 20.3], // starting position [lng, lat]
-      zoom: 9 // starting zoom
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v10',
+      center: [85.8, 20.3],
+      zoom: 12
+    });
+
+    // Add marker
+    new mapboxgl.Marker()
+      .setLngLat([85.8, 20.3])
+      .addTo(map);
+
+    // Fixed navbar behavior
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 50) {
+        document.getElementById('main-nav').classList.add('navbar-scrolled');
+      } else {
+        document.getElementById('main-nav').classList.remove('navbar-scrolled');
+      }
     });
   </script>
-
-
 </body>
 
 </html>
